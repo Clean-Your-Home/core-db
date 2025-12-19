@@ -1,6 +1,6 @@
 CREATE TABLE cleaners (
     id SERIAL PRIMARY KEY,
-    user_id INTEGER NOT NULL UNIQUE REFERENCES users(id) ON DELETE CASCADE,
+    user_id uuid NOT NULL UNIQUE REFERENCES users(id) ON DELETE CASCADE,
     hire_date DATE NOT NULL,
     salary_rate DECIMAL(10,2) NOT NULL CHECK (salary_rate > 0),
     specialization specialization_type[] NOT NULL,

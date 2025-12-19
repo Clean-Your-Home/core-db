@@ -5,6 +5,7 @@ readonly SCHEMA_DIR="schemas"
 
 readonly ORDERED_TABLES=(
     users
+    refresh_sessions
     services
     cleaners
     bookings
